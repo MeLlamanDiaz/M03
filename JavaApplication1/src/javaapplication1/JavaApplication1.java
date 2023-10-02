@@ -25,42 +25,30 @@ int copes = sc.nextInt();
             System.out.println("Quina carta vols Mago Electrico(m) o Esbirro Mega(e)");
             carta = sc.next().charAt(0);
 
-            if (carta=='e' || carta=='E'){
-                System.out.println("Has escollit Esbirro Mega");
-            }
-            else if (carta=='m' || carta=='M'){
-                System.out.println("Has escollit Mago Electrico");
-                        }
-            else {
-                System.out.println("carta no válida");
-            }
+        switch (carta) {
+            case 'e', 'E' -> System.out.println("Has escollit Esbirro Mega");
+            case 'm', 'M' -> System.out.println("Has escollit Mago Electrico");
+            default -> System.out.println("carta no válida");
+        }
         }
     else if (copes>=2000 && copes<3000){   
             System.out.println("Quina carta vols Cavallero(c) i Bandida(b)");
             carta = sc.next().charAt(0);
 
-            if (carta=='c' || carta=='C'){
-                System.out.println("Has escollit Cavallero");
-            }
-            else if (carta=='b' || carta=='B'){
-                System.out.println("Has escollit Bandida");
-                        }
-            else {
-                System.out.println("carta no válida");
-            }
+        switch (carta) {
+            case 'c', 'C' -> System.out.println("Has escollit Cavallero");
+            case 'b', 'B' -> System.out.println("Has escollit Bandida");
+            default -> System.out.println("carta no válida");
+        }
         }
     else if (copes>=3000){   
             System.out.println("Quina carta vols Ejercito de Esqueletos(e) o el Gigante(g)");
             carta = sc.next().charAt(0);
 
-            if (carta=='e' || carta=='E'){
-                System.out.println("Has Ejercito de Esqueletos");
-            }
-            else if (carta=='g' || carta=='G'){
-                System.out.println("Has escollit Gigante");
-                        }
-            else {
-                System.out.println("carta no válida");
+        switch (carta) {
+            case 'e', 'E' -> System.out.println("Has Ejercito de Esqueletos");
+            case 'g', 'G' -> System.out.println("Has escollit Gigante");
+            default -> System.out.println("carta no válida");
         }
     }
 }
